@@ -3,14 +3,14 @@
 #include <stdio.h>
 
 /**
- * main generate random number and print
+ *main - generate random number and print
  *whether umber is positive or negative
- *return 0
+ *Return:  0
  */
 int main(void)
 {
 	int n;
-	
+
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
 	if (n > 0)
@@ -25,5 +25,6 @@ int main(void)
 	{
 		printf("%d is negative\n", n);
 	}
+	/*return 0*/
 	return (0);
 }
