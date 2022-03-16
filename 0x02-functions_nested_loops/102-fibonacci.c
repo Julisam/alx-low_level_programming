@@ -20,7 +20,7 @@ int main(void)
 		if (i != 49)
 			printf("%li, ", nextTerm);
 		else
-			printf("%li,", nextTerm);
+			printf("%li", nextTerm);
 		t1 = t2;
 		t2 = nextTerm;
 		nextTerm = t1 + t2;
