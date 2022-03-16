@@ -18,9 +18,9 @@ int main(void)
 	for (i = 0; i < 50; ++i)
 	{
 		if (i != 49)
-			printf("%d, ", nextTerm);
+			printf("%li, ", nextTerm);
 		else
-			printf("%d,", nextTerm);
+			printf("%li,", nextTerm);
 		t1 = t2;
 		t2 = nextTerm;
 		nextTerm = t1 + t2;
