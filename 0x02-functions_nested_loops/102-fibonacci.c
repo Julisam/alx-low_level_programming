@@ -13,7 +13,7 @@ int main(void)
 	long int t1 = 0;
 	long int t2 = 1;
 
-	int nextTerm = t1 + t2;
+	long int nextTerm = t1 + t2;
 
 	for (i = 0; i < 50; ++i)
 	{
