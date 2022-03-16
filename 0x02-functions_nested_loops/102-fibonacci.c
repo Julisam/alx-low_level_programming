@@ -10,8 +10,8 @@
 int main(void)
 {
 	int i;
-	int t1 = 0;
-	int t2 = 1;
+	long int t1 = 0;
+	long int t2 = 1;
 
 	int nextTerm = t1 + t2;
 
