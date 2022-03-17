@@ -1,12 +1,12 @@
 #include "main.h"
 
 /**
- * print_numbers - print number 0-9 omit 2 & 4
+ * print_most_numbers - print number 0-9 omit 2 & 4
  * Return : 1 if c is lower case 0 otherwise
  *
  */
 
-void print_numbers(void)
+void print_most_numbers(void)
 {
 	int c;
 
