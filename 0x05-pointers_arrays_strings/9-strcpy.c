@@ -5,20 +5,19 @@
  *@dest: pointer to destination
  *@src: pointer to source
  *
- *Return: void.
+ *Return: pointer to destination
  */
 char *_strcpy(char *dest, char *src)
 {
-	int i;
+	int i = 0;
 
-	for (i = 0; i < n; i++)
+	while (*src != '\0')
 	{
-		printf("%d", a[i]);
-		if (i != n - 1)
-		{
-			printf(",");
-			printf(" ");
-		}
+		*(dest + i) = *src;
+
+		src++;
+		i++;
 	}
-	printf("\n");
+
+	return (dest);
 }
