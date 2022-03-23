@@ -15,18 +15,18 @@
 
 char *_strcat(char *dest, char *src)
 {
-    int last = _strlen(dest);
-    
+	int last = _strlen(dest);
+
     while (*src != '\0')
-    {
-        *(dest+last) = *src;
-        src++;
-        last++;
-    }
-    
-    *(dest+last) = '\0';
-    
-    return dest;
+	{
+		*(dest+last) = *src;
+		src++;
+		last++;
+	}
+
+	*(dest+last) = '\0';
+	
+	return dest;
 }
 
 
