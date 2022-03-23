@@ -4,9 +4,7 @@
  *@dest: destination string.
  *@src:  source string
  *Return: pointer to destination string.
- */
-
-/**
+ *
  *_strlen - finds and outputs length of string.
  *@s: pointer to string.
  *Return: length of a string.
