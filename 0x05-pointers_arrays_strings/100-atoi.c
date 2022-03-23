@@ -2,7 +2,7 @@
 
 /**
  * _atoi  - Convert string to integer
- * @s char arrary
+ * @s: char arrary
  * Return: the integer equivalent
  */
 
