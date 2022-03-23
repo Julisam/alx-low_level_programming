@@ -16,17 +16,17 @@
 char *_strcat(char *dest, char *src)
 {
 	int last = _strlen(dest);
-
-    while (*src != '\0')
+	
+	while (*src != '\0')
 	{
-		*(dest+last) = *src;
+		*(dest + last) = *src;
 		src++;
 		last++;
 	}
 
-	*(dest+last) = '\0';
-	
-	return dest;
+	*(dest + last) = '\0';
+
+	return (dest);
 }
 
 
