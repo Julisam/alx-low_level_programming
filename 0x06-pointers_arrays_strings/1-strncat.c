@@ -6,13 +6,14 @@
  *@n:  no of bytes to use
  *Return: destination pointer
  */
+
 char *_strncat(char *dest, char *src, int n)
 {
-    int i;
-    
+	int i;
+
 	int last = _strlen(dest);
 
-	for(i = 0; i < n && *src != '\0'; i++)
+	for (i = 0; i < n && *src != '\0'; i++)
 	{
 		*(dest + last) = *src;
 		src++;
