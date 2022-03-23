@@ -4,10 +4,6 @@
  *@dest: destination string.
  *@src:  source string
  *Return: pointer to destination string.
- *
- *_strlen - finds and outputs length of string.
- *@s: pointer to string.
- *Return: length of a string.
  */
 
 char *_strcat(char *dest, char *src)
@@ -26,6 +22,12 @@ char *_strcat(char *dest, char *src)
 	return (dest);
 }
 
+
+/**
+ *_strlen - finds and outputs length of string.
+ *@s: pointer to string.
+ *Return: length of a string.
+ */
 
 int _strlen(char *s)
 {
