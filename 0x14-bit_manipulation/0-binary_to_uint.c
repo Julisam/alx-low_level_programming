@@ -28,19 +28,22 @@ unsigned int binary_to_uint(const char *b)
 	unsigned int result = 0;
 	unsigned int power = 1;
 
-	for (int pos = _strlen(b) - 1; pos >= 0; pos--){
-		if  (b[pos] == '0'){
-			
+	for (int pos = _strlen(b) - 1; pos >= 0; pos--)
+	{
+		if  (b[pos] == '0')
+		{	
 		}
-		else if  (b[pos] == '1'){
+		else if  (b[pos] == '1')
+		{
 			result += power;
 		}
-		else {
+		else 
+		{
 			return (0);   
 		}
 		power *= 2;
 	}
-	
+
 	return (result);
 
 }
