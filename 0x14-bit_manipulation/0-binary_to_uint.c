@@ -1,14 +1,5 @@
 #include "main.h"
 /**
-  * _stoi - converts chars to ints
-  * @c: char to convert
-  * Return: converted int
-  */
-unsigned int _stoi(char c)
-{
-	return ((unsigned int) c - '0');
-}
-/**
   * _strlen - calculates the length of the string
   * @s: input
   * Return: length of string
@@ -17,8 +8,12 @@ unsigned int _strlen(const char *s)
 {
 	unsigned int i;
 
-	for (i = 0; s[i]; i++)
-		;
+	i = 0;
+	while (*s != '\0')
+	{
+		i++;
+		s++;
+	}
 	return (i);
 }
 /**
@@ -26,21 +21,26 @@ unsigned int _strlen(const char *s)
   * @b: string to convert
   * Return: unsigned decimal number
   */
+
 unsigned int binary_to_uint(const char *b)
 {
-	int i;
-	unsigned int result, tmp, expo;
+	unsigned int pos;
+	unsigned int result = 0;
+	unsigned int power = 1;
 
-	if (!b)
-		return (0);
-	result = tmp = 0;
-	expo = 1;
-	for (i = _strlen(b) - 1; b[i]; i--, expo *= 2)
-	{
-		if (b[i] != '0' && b[i] != '1')
-			return (0);
-		tmp = _stoi(b[i]);
-		result += tmp * expo;
+	for (int pos = _strlen(b) - 1; pos >= 0; pos--){
+		if  (b[pos] == '0'){
+			
+		}
+		else if  (b[pos] == '1'){
+			result += power;
+		}
+		else {
+			return (0);   
+		}
+		power *= 2;
 	}
+	
 	return (result);
+
 }
