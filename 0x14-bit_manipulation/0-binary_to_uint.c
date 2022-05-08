@@ -28,7 +28,7 @@ unsigned int binary_to_uint(const char *b)
 	unsigned int result = 0;
 	unsigned int power = 1;
 
-	if (b == NULL || b[0] == '\0')
+	if (!*b || b == NULL || b[0] == '\0')
 	{
 		return (0);
 	}
