@@ -31,15 +31,15 @@ unsigned int binary_to_uint(const char *b)
 	for (int pos = _strlen(b) - 1; pos >= 0; pos--)
 	{
 		if  (b[pos] == '0')
-		{	
+		{
 		}
 		else if  (b[pos] == '1')
 		{
 			result += power;
 		}
-		else 
+		else
 		{
-			return (0);   
+			return (0);
 		}
 		power *= 2;
 	}
