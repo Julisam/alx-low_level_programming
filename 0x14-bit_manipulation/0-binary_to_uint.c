@@ -28,13 +28,18 @@ unsigned int binary_to_uint(const char *b)
 	unsigned int result = 0;
 	unsigned int power = 1;
 
-	if (!*b)
+	if (!*b || b[0] == '\0')
 	{
 		return (0);
 	}
 
 	for (pos = _strlen(b) - 1; pos >= 0; pos--)
 	{
+	    if (pos > 32)
+	    {
+	        return (0);
+	    }
+	    
 		if  (b[pos] == '0')
 		{
 		}
