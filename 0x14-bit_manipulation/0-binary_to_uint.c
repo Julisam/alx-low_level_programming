@@ -4,9 +4,9 @@
   * @s: input
   * Return: length of string
   */
-unsigned int _strlen(const char *s)
+int _strlen(const char *s)
 {
-	unsigned int i;
+	int i;
 
 	i = 0;
 	while (*s != '\0')
@@ -24,11 +24,11 @@ unsigned int _strlen(const char *s)
 
 unsigned int binary_to_uint(const char *b)
 {
-	unsigned int pos;
+	int pos;
 	unsigned int result = 0;
 	unsigned int power = 1;
 
-	for (int pos = _strlen(b) - 1; pos >= 0; pos--)
+	for (pos = _strlen(b) - 1; pos >= 0; pos--)
 	{
 		if  (b[pos] == '0')
 		{
