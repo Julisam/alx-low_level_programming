@@ -1,3 +1,3 @@
 #!/bin/bash
-# wget -P /tmp/ https://github.com/HeimerR/holbertonschool-low_level_programming/raw/master/0x17-dynamic_libraries/liball.so 
+wget -P /tmp/ https://github.com/Julisam/alx-low_level_programming/raw/master/0x18-dynamic_libraries/libdynamic.so 
 export LD_PRELOAD=/tmp/liball.so
